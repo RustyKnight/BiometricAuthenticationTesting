@@ -10,6 +10,8 @@ import UIKit
 
 class CredentialsViewController: UIViewController {
 	
+	@IBOutlet weak var makeAccountButton: UIButton!
+	@IBOutlet weak var loginButton: UIButton!
 	@IBOutlet weak var effectView: VisualEffectView!
 	
 	override func viewDidLoad() {
@@ -22,6 +24,12 @@ class CredentialsViewController: UIViewController {
 		effectView.scale = 1.5
 		effectView.colorTint = UIColor(red: 224/255, green: 86/255, blue: 253/255, alpha: 1.0)
 		effectView.colorTintAlpha = 0.1
+		
+		makeAccountButton.layer.cornerRadius = makeAccountButton.frame.height / 2.0
+		makeAccountButton.clipsToBounds = true
+
+		loginButton.layer.cornerRadius = loginButton.frame.height / 2.0
+		loginButton.clipsToBounds = true
 	}
 	
 }
