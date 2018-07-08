@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1278337E20F2CDC300462882 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278337D20F2CDC300462882 /* Biometrics.swift */; };
 		704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */; };
 		704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */; };
 		70D9494220F1779D00586C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9494120F1779D00586C8B /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1278337D20F2CDC300462882 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 		704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		70D9493E20F1779D00586C8B /* BiometricsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1278337C20F2CDA200462882 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1278337D20F2CDC300462882 /* Biometrics.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		70D9493520F1779D00586C8B = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				70D9494820F177A000586C8B /* Assets.xcassets */,
 				70D9496620F1780D00586C8B /* Storyboards */,
 				70D9496120F177BA00586C8B /* StyleKit */,
+				1278337C20F2CDA200462882 /* Support */,
 				70D9496220F177D500586C8B /* ViewControllers */,
 			);
 			path = BiometricsTest;
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1278337E20F2CDC300462882 /* Biometrics.swift in Sources */,
 				704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */,
 				70D9494420F1779D00586C8B /* ViewController.swift in Sources */,
 				70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */,
