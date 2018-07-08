@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */; };
+		704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */; };
+		70D9494220F1779D00586C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9494120F1779D00586C8B /* AppDelegate.swift */; };
+		70D9494420F1779D00586C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9494320F1779D00586C8B /* ViewController.swift */; };
+		70D9494720F1779D00586C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D9494520F1779D00586C8B /* Main.storyboard */; };
+		70D9494920F177A000586C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D9494820F177A000586C8B /* Assets.xcassets */; };
+		70D9494C20F177A000586C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D9494A20F177A000586C8B /* LaunchScreen.storyboard */; };
+		70D9495720F177A000586C8B /* BiometricsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9495620F177A000586C8B /* BiometricsTestUITests.swift */; };
+		70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496320F1780000586C8B /* MPParallaxView.swift */; };
+		70D9496820F17A5500586C8B /* BioStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496720F17A5500586C8B /* BioStyleKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70D9495320F177A000586C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70D9493620F1779D00586C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70D9493D20F1779D00586C8B;
+			remoteInfo = BiometricsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
+		704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		70D9493E20F1779D00586C8B /* BiometricsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D9494120F1779D00586C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70D9494320F1779D00586C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70D9494620F1779D00586C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70D9494820F177A000586C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70D9494B20F177A000586C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70D9494D20F177A000586C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D9495220F177A000586C8B /* BiometricsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D9495620F177A000586C8B /* BiometricsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsTestUITests.swift; sourceTree = "<group>"; };
+		70D9495820F177A000586C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D9496320F1780000586C8B /* MPParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPParallaxView.swift; sourceTree = "<group>"; };
+		70D9496720F17A5500586C8B /* BioStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioStyleKit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D9493B20F1779D00586C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D9494F20F177A000586C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70D9493520F1779D00586C8B = {
+			isa = PBXGroup;
+			children = (
+				70D9494020F1779D00586C8B /* BiometricsTest */,
+				70D9495520F177A000586C8B /* BiometricsTestUITests */,
+				70D9493F20F1779D00586C8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70D9493F20F1779D00586C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D9493E20F1779D00586C8B /* BiometricsTest.app */,
+				70D9495220F177A000586C8B /* BiometricsTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D9494020F1779D00586C8B /* BiometricsTest */ = {
+			isa = PBXGroup;
+			children = (
+				70D9494D20F177A000586C8B /* Info.plist */,
+				70D9494120F1779D00586C8B /* AppDelegate.swift */,
+				70D9494820F177A000586C8B /* Assets.xcassets */,
+				70D9496620F1780D00586C8B /* Storyboards */,
+				70D9496120F177BA00586C8B /* StyleKit */,
+				70D9496220F177D500586C8B /* ViewControllers */,
+			);
+			path = BiometricsTest;
+			sourceTree = "<group>";
+		};
+		70D9495520F177A000586C8B /* BiometricsTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70D9495620F177A000586C8B /* BiometricsTestUITests.swift */,
+				70D9495820F177A000586C8B /* Info.plist */,
+			);
+			path = BiometricsTestUITests;
+			sourceTree = "<group>";
+		};
+		70D9496120F177BA00586C8B /* StyleKit */ = {
+			isa = PBXGroup;
+			children = (
+				70D9496720F17A5500586C8B /* BioStyleKit.swift */,
+			);
+			path = StyleKit;
+			sourceTree = "<group>";
+		};
+		70D9496220F177D500586C8B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D9496320F1780000586C8B /* MPParallaxView.swift */,
+				70D9494320F1779D00586C8B /* ViewController.swift */,
+				704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */,
+				704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70D9496620F1780D00586C8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				70D9494520F1779D00586C8B /* Main.storyboard */,
+				70D9494A20F177A000586C8B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D9493D20F1779D00586C8B /* BiometricsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D9495B20F177A000586C8B /* Build configuration list for PBXNativeTarget "BiometricsTest" */;
+			buildPhases = (
+				70D9493A20F1779D00586C8B /* Sources */,
+				70D9493B20F1779D00586C8B /* Frameworks */,
+				70D9493C20F1779D00586C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiometricsTest;
+			productName = BiometricsTest;
+			productReference = 70D9493E20F1779D00586C8B /* BiometricsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70D9495120F177A000586C8B /* BiometricsTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D9495E20F177A000586C8B /* Build configuration list for PBXNativeTarget "BiometricsTestUITests" */;
+			buildPhases = (
+				70D9494E20F177A000586C8B /* Sources */,
+				70D9494F20F177A000586C8B /* Frameworks */,
+				70D9495020F177A000586C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70D9495420F177A000586C8B /* PBXTargetDependency */,
+			);
+			name = BiometricsTestUITests;
+			productName = BiometricsTestUITests;
+			productReference = 70D9495220F177A000586C8B /* BiometricsTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D9493620F1779D00586C8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Shane Whitehead";
+				TargetAttributes = {
+					70D9493D20F1779D00586C8B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					70D9495120F177A000586C8B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 70D9493D20F1779D00586C8B;
+					};
+				};
+			};
+			buildConfigurationList = 70D9493920F1779D00586C8B /* Build configuration list for PBXProject "BiometricsTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70D9493520F1779D00586C8B;
+			productRefGroup = 70D9493F20F1779D00586C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D9493D20F1779D00586C8B /* BiometricsTest */,
+				70D9495120F177A000586C8B /* BiometricsTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D9493C20F1779D00586C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D9494C20F177A000586C8B /* LaunchScreen.storyboard in Resources */,
+				70D9494920F177A000586C8B /* Assets.xcassets in Resources */,
+				70D9494720F1779D00586C8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D9495020F177A000586C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D9493A20F1779D00586C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */,
+				70D9494420F1779D00586C8B /* ViewController.swift in Sources */,
+				70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */,
+				70D9494220F1779D00586C8B /* AppDelegate.swift in Sources */,
+				70D9496820F17A5500586C8B /* BioStyleKit.swift in Sources */,
+				704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D9494E20F177A000586C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D9495720F177A000586C8B /* BiometricsTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70D9495420F177A000586C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70D9493D20F1779D00586C8B /* BiometricsTest */;
+			targetProxy = 70D9495320F177A000586C8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70D9494520F1779D00586C8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D9494620F1779D00586C8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70D9494A20F177A000586C8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D9494B20F177A000586C8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D9495920F177A000586C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70D9495A20F177A000586C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70D9495C20F177A000586C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWXH886EY3;
+				INFOPLIST_FILE = BiometricsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70D9495D20F177A000586C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWXH886EY3;
+				INFOPLIST_FILE = BiometricsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70D9495F20F177A000586C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWXH886EY3;
+				INFOPLIST_FILE = BiometricsTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricsTest;
+			};
+			name = Debug;
+		};
+		70D9496020F177A000586C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWXH886EY3;
+				INFOPLIST_FILE = BiometricsTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricsTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D9493920F1779D00586C8B /* Build configuration list for PBXProject "BiometricsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9495920F177A000586C8B /* Debug */,
+				70D9495A20F177A000586C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D9495B20F177A000586C8B /* Build configuration list for PBXNativeTarget "BiometricsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9495C20F177A000586C8B /* Debug */,
+				70D9495D20F177A000586C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D9495E20F177A000586C8B /* Build configuration list for PBXNativeTarget "BiometricsTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9495F20F177A000586C8B /* Debug */,
+				70D9496020F177A000586C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70D9493620F1779D00586C8B /* Project object */;
+}
