@@ -54,7 +54,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: textStyle,
-        ] as [NSAttributedStringKey: Any]
+            ] as [NSAttributedString.Key: Any]
 
         let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).height
         context.saveGState()
@@ -78,7 +78,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text2Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text2TextHeight: CGFloat = text2TextContent.boundingRect(with: CGSize(width: text2Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text2FontAttributes, context: nil).height
         context.saveGState()
@@ -102,7 +102,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text3Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text3TextHeight: CGFloat = text3TextContent.boundingRect(with: CGSize(width: text3Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text3FontAttributes, context: nil).height
         context.saveGState()
@@ -126,7 +126,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text4Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text4TextHeight: CGFloat = text4TextContent.boundingRect(with: CGSize(width: text4Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text4FontAttributes, context: nil).height
         context.saveGState()
@@ -150,7 +150,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text5Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text5TextHeight: CGFloat = text5TextContent.boundingRect(with: CGSize(width: text5Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text5FontAttributes, context: nil).height
         context.saveGState()
@@ -174,7 +174,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text6Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text6TextHeight: CGFloat = text6TextContent.boundingRect(with: CGSize(width: text6Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text6FontAttributes, context: nil).height
         context.saveGState()
@@ -198,7 +198,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text7Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text7TextHeight: CGFloat = text7TextContent.boundingRect(with: CGSize(width: text7Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text7FontAttributes, context: nil).height
         context.saveGState()
@@ -222,7 +222,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text8Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text8TextHeight: CGFloat = text8TextContent.boundingRect(with: CGSize(width: text8Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text8FontAttributes, context: nil).height
         context.saveGState()
@@ -274,7 +274,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text9Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text9TextHeight: CGFloat = text9TextContent.boundingRect(with: CGSize(width: text9Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text9FontAttributes, context: nil).height
         context.saveGState()
@@ -302,7 +302,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text10Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text10TextHeight: CGFloat = text10TextContent.boundingRect(with: CGSize(width: text10Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text10FontAttributes, context: nil).height
         context.saveGState()
@@ -330,7 +330,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text11Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text11TextHeight: CGFloat = text11TextContent.boundingRect(with: CGSize(width: text11Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text11FontAttributes, context: nil).height
         context.saveGState()
@@ -358,7 +358,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text12Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text12TextHeight: CGFloat = text12TextContent.boundingRect(with: CGSize(width: text12Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text12FontAttributes, context: nil).height
         context.saveGState()
@@ -387,7 +387,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: textStyle,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).height
         context.saveGState()
@@ -411,7 +411,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text2Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text2TextHeight: CGFloat = text2TextContent.boundingRect(with: CGSize(width: text2Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text2FontAttributes, context: nil).height
         context.saveGState()
@@ -435,7 +435,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text3Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text3TextHeight: CGFloat = text3TextContent.boundingRect(with: CGSize(width: text3Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text3FontAttributes, context: nil).height
         context.saveGState()
@@ -459,7 +459,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text4Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text4TextHeight: CGFloat = text4TextContent.boundingRect(with: CGSize(width: text4Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text4FontAttributes, context: nil).height
         context.saveGState()
@@ -483,7 +483,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text5Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text5TextHeight: CGFloat = text5TextContent.boundingRect(with: CGSize(width: text5Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text5FontAttributes, context: nil).height
         context.saveGState()
@@ -507,7 +507,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text6Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text6TextHeight: CGFloat = text6TextContent.boundingRect(with: CGSize(width: text6Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text6FontAttributes, context: nil).height
         context.saveGState()
@@ -531,7 +531,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text7Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text7TextHeight: CGFloat = text7TextContent.boundingRect(with: CGSize(width: text7Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text7FontAttributes, context: nil).height
         context.saveGState()
@@ -555,7 +555,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: text8Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text8TextHeight: CGFloat = text8TextContent.boundingRect(with: CGSize(width: text8Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text8FontAttributes, context: nil).height
         context.saveGState()
@@ -607,7 +607,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text9Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text9TextHeight: CGFloat = text9TextContent.boundingRect(with: CGSize(width: text9Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text9FontAttributes, context: nil).height
         context.saveGState()
@@ -635,7 +635,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text10Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text10TextHeight: CGFloat = text10TextContent.boundingRect(with: CGSize(width: text10Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text10FontAttributes, context: nil).height
         context.saveGState()
@@ -663,7 +663,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text11Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text11TextHeight: CGFloat = text11TextContent.boundingRect(with: CGSize(width: text11Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text11FontAttributes, context: nil).height
         context.saveGState()
@@ -691,7 +691,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text12Style,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let text12TextHeight: CGFloat = text12TextContent.boundingRect(with: CGSize(width: text12Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text12FontAttributes, context: nil).height
         context.saveGState()
