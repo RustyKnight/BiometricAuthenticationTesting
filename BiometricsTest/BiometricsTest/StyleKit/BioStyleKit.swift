@@ -43,7 +43,7 @@ public class BioStyleKit : NSObject {
         //// Group
         //// text Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let textRect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -54,7 +54,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color,
             .paragraphStyle: textStyle,
-            ] as [NSAttributedString.Key: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).height
         context.saveGState()
@@ -67,7 +67,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 2 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text2Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -91,7 +91,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 3 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text3Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -115,7 +115,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 4 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text4Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -139,7 +139,7 @@ public class BioStyleKit : NSObject {
 
         //// text 5 Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text5Rect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -163,7 +163,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 6 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text6Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -187,7 +187,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 7 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text7Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -211,7 +211,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 8 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text8Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -261,7 +261,7 @@ public class BioStyleKit : NSObject {
         //// Group 2
         //// text 9 Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text9Rect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -289,7 +289,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 10 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text10Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -317,7 +317,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 11 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text11Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -345,7 +345,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 12 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text12Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -376,7 +376,7 @@ public class BioStyleKit : NSObject {
         //// Group
         //// text Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let textRect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -400,7 +400,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 2 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text2Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -424,7 +424,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 3 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text3Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -448,7 +448,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 4 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text4Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -472,7 +472,7 @@ public class BioStyleKit : NSObject {
 
         //// text 5 Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text5Rect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -496,7 +496,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 6 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text6Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -520,7 +520,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 7 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text7Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -544,7 +544,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 8 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text8Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -592,9 +592,14 @@ public class BioStyleKit : NSObject {
         shadow2.shadowBlurRadius = 50
 
         //// Group 2
+        context.saveGState()
+        context.setShadow(offset: CGSize(width: shadow2.shadowOffset.width * resizedShadowScale, height: shadow2.shadowOffset.height * resizedShadowScale), blur: shadow2.shadowBlurRadius * resizedShadowScale, color: (shadow2.shadowColor as! UIColor).cgColor)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+
+
         //// text 9 Drawing
         context.saveGState()
-        context.translateBy(x: 0, y: 200)
+        context.translateBy(x: 20, y: 200)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text9Rect = CGRect(x: 0, y: 0, width: 1023.46, height: 246.2)
@@ -622,7 +627,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 10 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 409)
+        context.translateBy(x: 40, y: 409)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text10Rect = CGRect(x: 0, y: 0, width: 968, height: 246.2)
@@ -650,7 +655,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 11 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 600)
+        context.translateBy(x: 40, y: 600)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text11Rect = CGRect(x: 0, y: 0, width: 815, height: 246.2)
@@ -678,7 +683,7 @@ public class BioStyleKit : NSObject {
 
         //// Text 12 Drawing
         context.saveGState()
-        context.translateBy(x: 20, y: 771.17)
+        context.translateBy(x: 40, y: 771.17)
         context.rotate(by: -13.22 * CGFloat.pi/180)
 
         let text12Rect = CGRect(x: 0, y: 0, width: 877, height: 246.2)
@@ -691,7 +696,7 @@ public class BioStyleKit : NSObject {
             .font: UIFont(name: "Papyrus", size: 148)!,
             .foregroundColor: color3,
             .paragraphStyle: text12Style,
-        ] as [NSAttributedString.Key: Any]
+            ] as [NSAttributedString.Key: Any]
 
         let text12TextHeight: CGFloat = text12TextContent.boundingRect(with: CGSize(width: text12Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text12FontAttributes, context: nil).height
         context.saveGState()
@@ -701,6 +706,10 @@ public class BioStyleKit : NSObject {
         context.restoreGState()
 
 
+        context.restoreGState()
+
+
+        context.endTransparencyLayer()
         context.restoreGState()
         
         context.restoreGState()
