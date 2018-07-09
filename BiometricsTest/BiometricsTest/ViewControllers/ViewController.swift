@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import KeychainAccess
 
 private struct AccelerometerMovement {
 	let x: Double
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
 	
 	fileprivate let motionManager = CMMotionManager()
 	fileprivate var accelerometerMovement: AccelerometerMovement?
+  
+  var userName: String?
+  var password: String?
 	
 	var multiplerOfIndexInHierarchyToParallaxOffset: CGFloat = 50.0
 	
@@ -44,14 +48,56 @@ class ViewController: UIViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		
-		performSegue(withIdentifier: "Segue.credentials", sender: nil)
+    DispatchQueue.laterOnMainThread {
+      self.performLogin()
+    }
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
 		motionManager.stopDeviceMotionUpdates()
 	}
+  
+  func performLogin() {
+    let defaults = UserDefaults.standard
+    guard let userName = defaults.string(forKey: "UserName") else {
+      performSegue(withIdentifier: "Segue.credentials", sender: nil)
+      return
+    }
+    let ba = BiometricAuth()
+    switch ba.supportedBiometry {
+    case .available(.faceID): fallthrough
+    case .available(.touchID):
+      guard defaults.bool(forKey: "UseBio") else {
+        performSegue(withIdentifier: "Segue.credentials", sender: nil)
+        return
+      }
+      let keyChain = Keychain(service: "super.awesome.funtime.messaging")
+      DispatchQueue.global().sync {
+        do {
+          let password = try keyChain.authenticationPrompt("Get your magic key to the portal of super fun times")
+            .get("UserAccount")
+          print("Password = \(password)")
+          DispatchQueue.onMainThread {
+            guard let password = password else {
+              self.performSegue(withIdentifier: "Segue.credentials", sender: nil)
+              return
+            }
+            self.userName = userName
+            self.password = password
+            self.performSegue(withIdentifier: "Segue.welcome", sender: self)
+          }
+        } catch let error {
+          DispatchQueue.onMainThread {
+            self.performSegue(withIdentifier: "Segue.credentials", sender: nil)
+          }
+        }
+      }
+    default:
+      performSegue(withIdentifier: "Segue.credentials", sender: nil)
+      break
+    }
+  }
 	
 	
 	fileprivate func applyParallaxEffectOnView() {
@@ -92,8 +138,58 @@ class ViewController: UIViewController {
 		return result
 	}
 	
-	
-	
-	
+  @IBAction func makeAccount(_ segue: UIStoryboardSegue) {
+    DispatchQueue.main.async {
+      self.performSegue(withIdentifier: "Segue.makeAccount", sender: self)
+    }
+  }
+
+  @IBAction func cancelAccountCreation(_ segue: UIStoryboardSegue) {
+    DispatchQueue.main.async {
+      self.performSegue(withIdentifier: "Segue.credentials", sender: self)
+    }
+  }
+
+  @IBAction func accountCreated(_ segue: UIStoryboardSegue) {
+    DispatchQueue.main.async {
+      self.performSegue(withIdentifier: "Segue.credentials", sender: self)
+    }
+  }
+
+  @IBAction func login(_ segue: UIStoryboardSegue) {
+    guard let controller = segue.source as? CredentialsViewController else {
+      showOkAlert(titled: "🤪😡🤬😱😭🤕", message: "Not coming from the credentials view")
+      return
+    }
+    guard let userName = controller.userName, let password = controller.password else {
+      showOkAlert(titled: "🤪😡🤬😱😭🤕", message: "No username/password defined")
+      return
+    }
+    
+    self.userName = userName
+    self.password = password
+    
+    DispatchQueue.laterOnMainThread {
+      self.performSegue(withIdentifier: "Segue.welcome", sender: self)
+    }
+  }
+
+  @IBAction func logout(_ segue: UIStoryboardSegue) {
+    DispatchQueue.laterOnMainThread {
+      self.performLogin()
+    }
+  }
+
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "Segue.welcome" {
+      guard let controller = segue.destination as? LoggedInViewController else {
+        showOkAlert(titled: "🤪😡🤬😱😭🤕", message: "Welcome wagon not going to welcomes-ville")
+        return
+      }
+      controller.userName = userName
+      controller.password = password
+    }
+  }
 }
 

@@ -10,6 +10,17 @@
 		1278337E20F2CDC300462882 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278337D20F2CDC300462882 /* Biometrics.swift */; };
 		704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */; };
 		704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */; };
+		706B9B6D20F2F2BD007297D3 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */; };
+		706B9B6E20F2F2BD007297D3 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		706B9B7120F2FA43007297D3 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */; };
+		706B9B7420F30C4E007297D3 /* UIAlertAction+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */; };
+		706B9B7620F30CB2007297D3 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7520F30CB2007297D3 /* String+Localisation.swift */; };
+		706B9B7820F30DE3007297D3 /* UIViewController+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7720F30DE3007297D3 /* UIViewController+Action.swift */; };
+		706B9B7A20F3145D007297D3 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7920F3145D007297D3 /* String+Trim.swift */; };
+		706B9B7C20F31574007297D3 /* DispatchQueue+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7B20F31574007297D3 /* DispatchQueue+Main.swift */; };
+		706B9B7E20F319CA007297D3 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7D20F319CA007297D3 /* LoggedInViewController.swift */; };
+		706B9B8020F32141007297D3 /* UIView+FirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7F20F32141007297D3 /* UIView+FirstResponder.swift */; };
+		706B9B8220F324C1007297D3 /* UserDefaults+Stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B8120F324C1007297D3 /* UserDefaults+Stuff.swift */; };
 		70D9494220F1779D00586C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9494120F1779D00586C8B /* AppDelegate.swift */; };
 		70D9494420F1779D00586C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9494320F1779D00586C8B /* ViewController.swift */; };
 		70D9494720F1779D00586C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D9494520F1779D00586C8B /* Main.storyboard */; };
@@ -30,10 +41,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		706B9B6F20F2F2BD007297D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				706B9B6E20F2F2BD007297D3 /* KeychainAccess.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1278337D20F2CDC300462882 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 		704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
+		706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Defaults.swift"; sourceTree = "<group>"; };
+		706B9B7520F30CB2007297D3 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
+		706B9B7720F30DE3007297D3 /* UIViewController+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Action.swift"; sourceTree = "<group>"; };
+		706B9B7920F3145D007297D3 /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
+		706B9B7B20F31574007297D3 /* DispatchQueue+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Main.swift"; sourceTree = "<group>"; };
+		706B9B7D20F319CA007297D3 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		706B9B7F20F32141007297D3 /* UIView+FirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FirstResponder.swift"; sourceTree = "<group>"; };
+		706B9B8120F324C1007297D3 /* UserDefaults+Stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Stuff.swift"; sourceTree = "<group>"; };
 		70D9493E20F1779D00586C8B /* BiometricsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D9494120F1779D00586C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D9494320F1779D00586C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706B9B6D20F2F2BD007297D3 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +110,24 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		706B9B7220F30C35007297D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */,
+				706B9B7520F30CB2007297D3 /* String+Localisation.swift */,
+				706B9B7720F30DE3007297D3 /* UIViewController+Action.swift */,
+				706B9B7920F3145D007297D3 /* String+Trim.swift */,
+				706B9B7B20F31574007297D3 /* DispatchQueue+Main.swift */,
+				706B9B7F20F32141007297D3 /* UIView+FirstResponder.swift */,
+				706B9B8120F324C1007297D3 /* UserDefaults+Stuff.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		70D9493520F1779D00586C8B = {
 			isa = PBXGroup;
 			children = (
+				706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */,
 				70D9494020F1779D00586C8B /* BiometricsTest */,
 				70D9495520F177A000586C8B /* BiometricsTestUITests */,
 				70D9493F20F1779D00586C8B /* Products */,
@@ -95,6 +146,7 @@
 		70D9494020F1779D00586C8B /* BiometricsTest */ = {
 			isa = PBXGroup;
 			children = (
+				706B9B7220F30C35007297D3 /* Extensions */,
 				70D9494D20F177A000586C8B /* Info.plist */,
 				70D9494120F1779D00586C8B /* AppDelegate.swift */,
 				70D9494820F177A000586C8B /* Assets.xcassets */,
@@ -130,6 +182,8 @@
 				70D9494320F1779D00586C8B /* ViewController.swift */,
 				704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */,
 				704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */,
+				706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */,
+				706B9B7D20F319CA007297D3 /* LoggedInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -153,6 +207,7 @@
 				70D9493A20F1779D00586C8B /* Sources */,
 				70D9493B20F1779D00586C8B /* Frameworks */,
 				70D9493C20F1779D00586C8B /* Resources */,
+				706B9B6F20F2F2BD007297D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,10 +301,19 @@
 			files = (
 				1278337E20F2CDC300462882 /* Biometrics.swift in Sources */,
 				704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */,
+				706B9B8020F32141007297D3 /* UIView+FirstResponder.swift in Sources */,
+				706B9B7A20F3145D007297D3 /* String+Trim.swift in Sources */,
+				706B9B7C20F31574007297D3 /* DispatchQueue+Main.swift in Sources */,
 				70D9494420F1779D00586C8B /* ViewController.swift in Sources */,
+				706B9B7E20F319CA007297D3 /* LoggedInViewController.swift in Sources */,
 				70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */,
+				706B9B7120F2FA43007297D3 /* MakeAccountViewController.swift in Sources */,
+				706B9B7420F30C4E007297D3 /* UIAlertAction+Defaults.swift in Sources */,
 				70D9494220F1779D00586C8B /* AppDelegate.swift in Sources */,
+				706B9B7820F30DE3007297D3 /* UIViewController+Action.swift in Sources */,
 				70D9496820F17A5500586C8B /* BioStyleKit.swift in Sources */,
+				706B9B8220F324C1007297D3 /* UserDefaults+Stuff.swift in Sources */,
+				706B9B7620F30CB2007297D3 /* String+Localisation.swift in Sources */,
 				704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
