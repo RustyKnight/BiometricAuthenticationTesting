@@ -1,2 +1,0 @@
-https://github.com/square/Valet
-https://github.com/kishikawakatsumi/KeychainAccess#accessibility

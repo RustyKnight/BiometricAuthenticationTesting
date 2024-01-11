@@ -10,6 +10,7 @@
 		1278337E20F2CDC300462882 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278337D20F2CDC300462882 /* Biometrics.swift */; };
 		704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */; };
 		704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */; };
+		7051AEEC2B4F6F8B0094098C /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7051AEEB2B4F6F8B0094098C /* KeychainAccess */; };
 		706B9B7120F2FA43007297D3 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */; };
 		706B9B7420F30C4E007297D3 /* UIAlertAction+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */; };
 		706B9B7620F30CB2007297D3 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7520F30CB2007297D3 /* String+Localisation.swift */; };
@@ -27,8 +28,6 @@
 		70D9495720F177A000586C8B /* BiometricsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9495620F177A000586C8B /* BiometricsTestUITests.swift */; };
 		70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496320F1780000586C8B /* MPParallaxView.swift */; };
 		70D9496820F17A5500586C8B /* BioStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496720F17A5500586C8B /* BioStyleKit.swift */; };
-		70E967BA2B4F59210059EEE4 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */; };
-		70E967BB2B4F59210059EEE4 /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +39,6 @@
 			remoteInfo = BiometricsTest;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		70E967BC2B4F59210059EEE4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				70E967BB2B4F59210059EEE4 /* KeychainAccess.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1278337D20F2CDC300462882 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
@@ -88,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E967BA2B4F59210059EEE4 /* KeychainAccess.xcframework in Frameworks */,
+				7051AEEC2B4F6F8B0094098C /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,13 +200,15 @@
 				70D9493A20F1779D00586C8B /* Sources */,
 				70D9493B20F1779D00586C8B /* Frameworks */,
 				70D9493C20F1779D00586C8B /* Resources */,
-				70E967BC2B4F59210059EEE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BiometricsTest;
+			packageProductDependencies = (
+				7051AEEB2B4F6F8B0094098C /* KeychainAccess */,
+			);
 			productName = BiometricsTest;
 			productReference = 70D9493E20F1779D00586C8B /* BiometricsTest.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 70D9493520F1779D00586C8B;
+			packageReferences = (
+				7051AEEA2B4F6F8B0094098C /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 70D9493F20F1779D00586C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -594,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7051AEEA2B4F6F8B0094098C /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7051AEEB2B4F6F8B0094098C /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7051AEEA2B4F6F8B0094098C /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70D9493620F1779D00586C8B /* Project object */;
 }
