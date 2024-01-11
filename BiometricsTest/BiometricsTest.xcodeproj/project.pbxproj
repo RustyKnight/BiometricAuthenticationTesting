@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1278337E20F2CDC300462882 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278337D20F2CDC300462882 /* Biometrics.swift */; };
 		704AAC9620F1A249006C87B1 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */; };
 		704AAC9820F1DABB006C87B1 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */; };
-		706B9B6D20F2F2BD007297D3 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */; };
-		706B9B6E20F2F2BD007297D3 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		706B9B7120F2FA43007297D3 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */; };
 		706B9B7420F30C4E007297D3 /* UIAlertAction+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */; };
 		706B9B7620F30CB2007297D3 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B9B7520F30CB2007297D3 /* String+Localisation.swift */; };
@@ -29,6 +27,8 @@
 		70D9495720F177A000586C8B /* BiometricsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9495620F177A000586C8B /* BiometricsTestUITests.swift */; };
 		70D9496420F1780000586C8B /* MPParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496320F1780000586C8B /* MPParallaxView.swift */; };
 		70D9496820F17A5500586C8B /* BioStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D9496720F17A5500586C8B /* BioStyleKit.swift */; };
+		70E967BA2B4F59210059EEE4 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */; };
+		70E967BB2B4F59210059EEE4 /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		706B9B6F20F2F2BD007297D3 /* Embed Frameworks */ = {
+		70E967BC2B4F59210059EEE4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				706B9B6E20F2F2BD007297D3 /* KeychainAccess.framework in Embed Frameworks */,
+				70E967BB2B4F59210059EEE4 /* KeychainAccess.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,6 @@
 		1278337D20F2CDC300462882 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 		704AAC9520F1A249006C87B1 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		704AAC9720F1DABB006C87B1 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
-		706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706B9B7020F2FA43007297D3 /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
 		706B9B7320F30C4E007297D3 /* UIAlertAction+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Defaults.swift"; sourceTree = "<group>"; };
 		706B9B7520F30CB2007297D3 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		70D9495820F177A000586C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D9496320F1780000586C8B /* MPParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPParallaxView.swift; sourceTree = "<group>"; };
 		70D9496720F17A5500586C8B /* BioStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioStyleKit.swift; sourceTree = "<group>"; };
+		70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = ../Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				706B9B6D20F2F2BD007297D3 /* KeychainAccess.framework in Frameworks */,
+				70E967BA2B4F59210059EEE4 /* KeychainAccess.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,10 +127,10 @@
 		70D9493520F1779D00586C8B = {
 			isa = PBXGroup;
 			children = (
-				706B9B6C20F2F2BD007297D3 /* KeychainAccess.framework */,
 				70D9494020F1779D00586C8B /* BiometricsTest */,
 				70D9495520F177A000586C8B /* BiometricsTestUITests */,
 				70D9493F20F1779D00586C8B /* Products */,
+				70E967B82B4F59210059EEE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +197,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		70E967B82B4F59210059EEE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70E967B92B4F59210059EEE4 /* KeychainAccess.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,7 +215,7 @@
 				70D9493A20F1779D00586C8B /* Sources */,
 				70D9493B20F1779D00586C8B /* Frameworks */,
 				70D9493C20F1779D00586C8B /* Resources */,
-				706B9B6F20F2F2BD007297D3 /* Embed Frameworks */,
+				70E967BC2B4F59210059EEE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,15 +250,18 @@
 		70D9493620F1779D00586C8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Shane Whitehead";
 				TargetAttributes = {
 					70D9493D20F1779D00586C8B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1520;
 					};
 					70D9495120F177A000586C8B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1520;
 						TestTargetID = 70D9493D20F1779D00586C8B;
 					};
 				};
@@ -382,6 +393,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -393,6 +405,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -443,6 +456,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -454,6 +468,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -485,7 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -503,7 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -522,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BiometricsTest;
 			};
@@ -542,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.BiometricsTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BiometricsTest;
 			};

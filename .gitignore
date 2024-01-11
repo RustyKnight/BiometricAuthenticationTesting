@@ -69,3 +69,4 @@ fastlane/test_output
 /Valet
 /KeychainAccess
 /SimpleKeychain
+/Carthage

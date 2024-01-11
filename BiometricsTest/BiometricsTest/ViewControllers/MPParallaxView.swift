@@ -102,12 +102,12 @@ open class MPParallaxView: UIView {
         if let currentQueue = OperationQueue.current, accelerometerEnabled {
             motionManager.accelerometerUpdateInterval = 0.1
             motionManager.startAccelerometerUpdates(to: currentQueue) {[weak self] data, error in
-               guard let strongSelf = self else { return }
+                guard let strongSelf = self else { return }
                 strongSelf.accelerometerMovement = AccelerometerMovement(x: data?.acceleration.x ?? 0.0, y: data?.acceleration.y ?? 0.0)
                 UIView.animate(withDuration: 0.1, animations: {
                     strongSelf.applyParallaxEffectOnView(basedOnTouch: nil)
                     strongSelf.applyGlowEffectOnView(basedOnAccelerometerMovement: strongSelf.accelerometerMovement)
-                }) 
+                })
             }
         }
     }
@@ -173,7 +173,7 @@ open class MPParallaxView: UIView {
                 subview.center = CGPoint(x: subview.center.x + self.widthZoom(subview), y: subview.center.y + self.heightZoom(subview))
                 subview.frame.size = CGSize(width: subview.frame.size.width - self.widthZoom(subview) * 2.0, height: subview.frame.size.height - self.heightZoom(subview) * 2.0)
             }
-        }) 
+        })
     }
     
     fileprivate func animateForGivenState(_ state: ViewState) {
@@ -188,25 +188,25 @@ open class MPParallaxView: UIView {
             break
         }
     }
-
+    
     fileprivate func addShadowGroupAnimation(shadowOffset: CGSize, shadowRadius: CGFloat, duration: TimeInterval, layer: CALayer) {
         if let presentationLayer = layer.presentation() {
             let offsetAnimation = CABasicAnimation(keyPath: "shadowOffset")
             offsetAnimation.fromValue = NSValue(cgSize: presentationLayer.shadowOffset)
             offsetAnimation.toValue = NSValue(cgSize: shadowOffset)
-
+            
             let radiusAnimation = CABasicAnimation(keyPath: "shadowRadius")
             radiusAnimation.fromValue = presentationLayer.shadowRadius as NSNumber
             radiusAnimation.toValue = shadowRadius
-
+            
             let animationGroup = CAAnimationGroup()
-
+            
             animationGroup.duration = duration
             animationGroup.animations = [offsetAnimation, radiusAnimation]
-
+            
             layer.add(animationGroup, forKey: "shadowAnim")
         }
-
+        
         layer.shadowRadius = shadowRadius
         layer.shadowOffset = shadowOffset
     }
@@ -220,19 +220,19 @@ open class MPParallaxView: UIView {
         let shadowOffset = CGSize.zero
         addShadowGroupAnimation(shadowOffset: shadowOffset, shadowRadius: initialShadowRadius, duration: 0.4, layer: layer)
     }
-
+    
     fileprivate func animatePick() {
         pickAnimation()
     }
-
+    
     fileprivate func animateReturn() {
         putDownAnimation()
     }
-
+    
     fileprivate func parallaxOffset(forView view: UIView) -> CGFloat {
         switch parallaxType {
         case .basedOnHierarchyInParallaxView(let parallaxOffsetMultiplier):
-            if let indexInSuperview = view.superview?.subviews.index(of: view) {
+            if let indexInSuperview = view.superview?.subviews.firstIndex(of: view) {
                 return CGFloat(indexInSuperview) * (parallaxOffsetMultiplier ?? multiplerOfIndexInHierarchyToParallaxOffset)
             } else {
                 return 5.0
@@ -284,7 +284,7 @@ open class MPParallaxView: UIView {
             self.contentView.subviews.forEach { subview in
                 subview.layer.transform = CATransform3DIdentity
             }
-        }) 
+        })
     }
     
     //MARK: Glow effect
@@ -308,8 +308,8 @@ open class MPParallaxView: UIView {
         guard let movement = movement, let superview = superview else { return }
         let bigMultiplerForAccelerometerToGlowOffset: Double = Double(superview.bounds.size.width * 2.0)
         glowEffect.center = CGPoint(x: center.x + CGFloat(movement.x * bigMultiplerForAccelerometerToGlowOffset),
-            y: center.y + CGFloat(movement.y *
-                bigMultiplerForAccelerometerToGlowOffset) * -1.0)
+                                    y: center.y + CGFloat(movement.y *
+                                                          bigMultiplerForAccelerometerToGlowOffset) * -1.0)
         let changeAlphaValue: CGFloat = 0.05
         if glowEffect.center.y > center.y {
             applyGlowAlpha(glowEffect.alpha + changeAlphaValue)
